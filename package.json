@@ -1,0 +1,13 @@
+{
+  "name": "code-examples-nodejs",
+  "author": "Remote Flags",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "remoteflags-nodejs-client": "^1.0.0"
+  }
+}
