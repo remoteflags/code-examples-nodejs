@@ -1,4 +1,5 @@
-# Remote Flags - nodejs examples
+![alt text](https://s3.eu-west-1.amazonaws.com/www.remoteflags.com/Header.png)
+# Node.js examples
 
 This package contains code example on how to integrate with Remote Flags api and fetch a specific flag status.
 
