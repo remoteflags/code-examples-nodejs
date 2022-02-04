@@ -1,3 +1,5 @@
+<br/>
+
 ![alt text](https://s3.eu-west-1.amazonaws.com/www.remoteflags.com/Header.png)
 # Node.js examples
 
@@ -8,7 +10,7 @@ This package contains code example on how to integrate with Remote Flags api and
 ---
 # How to use
 ## Step 1 - Gather data
-Visit remoteflags.com and grab the information you need to query the api, namely:
+Visit [Remote Flags](remoteflags.com) and grab the information you need to query the api, namely:
 
 1. Access Token - get it at [remoteflags.com/account](www.remoteflags.com/account)
 2. OwnerId - get it at [remoteflags.com/account]((www.remoteflags.com/account))
