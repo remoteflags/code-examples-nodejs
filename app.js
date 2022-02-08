@@ -1,17 +1,17 @@
 const http = require('http');
-const remoteflagsClient = require('remoteflags-nodejs-client');
+const client = require('remoteflags-nodejs-client');
 
 const hostname = '127.0.0.1';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-  // remoteflags client setup
-  const defaultClient = remoteflagsClient.ApiClient.instance;
-  const RemoteFlagsAuthorizer = defaultClient.authentications['RemoteFlagsAuthorizer'];
-  RemoteFlagsAuthorizer.apiKey = "<YourAccessToken>"
-  const api = new remoteflagsClient.PublicApi()
 
-  // remoteflags api call
+  // remoteflags client setup
+  const authorizer = client.ApiClient.instance.authentications['RemoteFlagsAuthorizer'];
+  authorizer.apiKey = "<YourAccessToken>"
+  const api = new client.PublicApi()
+
+  // parameters
   const ownerId = "<YourOwnerId>";
   const flagId = "<YourFlagId>";
   const opts = {
@@ -21,13 +21,13 @@ const server = http.createServer((req, res) => {
     if (error) {
       console.error(error);
     } else {
-      {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'text/plain');
-        res.end('Remote Flags - Nodejs code examples.\nFlag value: ' + data.value);
-      }
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'text/plain');
+      res.end('Remote Flags - Nodejs code examples.\nFlag value: ' + data.value);
     }
   };
+
+  // remoteflags api call
   api.getStatus(ownerId, flagId, opts, callback);
 });
 
