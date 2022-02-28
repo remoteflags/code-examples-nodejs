@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "axios": "^0.25.0",
-    "remoteflags-nodejs-client": "^1.0.2"
+    "remoteflags-nodejs-client": "^1.0.5"
   }
 }
