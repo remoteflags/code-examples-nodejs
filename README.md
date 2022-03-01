@@ -46,4 +46,4 @@ const opts = {};
 Your all set, simply run the project and see the flag status 
 
 1. Run - ```npm start```
-2. Visit - http://127.0.0.1:3000 
+2. Visit - http://localhost:3000
