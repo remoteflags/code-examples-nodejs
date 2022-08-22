@@ -19,6 +19,7 @@ server.on('request', async (req, res) => {
   const flagId = "<YOUR_FLAG_ID>";
   const opts = {
     'segment': "status",
+  };
 
   // remoteflags api call
   remoteFlagsApi.getStatus(ownerId, flagId, opts)
