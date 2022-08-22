@@ -11,13 +11,12 @@ server.on('request', async (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
 
   // remoteflags client setup
-  const authorizer = client.ApiClient.instance.authentications['RemoteFlagsAuthorizer'];
-  authorizer.apiKey = "<YourAccessToken>"
+  client.ApiClient.instance.authentications['RemoteFlagsAuthorizer'].apiKey = "<YOUR_API_KEY>"
   const api = new client.PublicApi()
 
   // parameters
-  const ownerId = "<YourOwnerId>";
-  const flagId = "<YourFlagId>";
+  const ownerId = "<YOUR_OWNER_ID>";
+  const flagId = "<YOUR_FLAG_ID>";
   const opts = {
     'segment': "status",
   };

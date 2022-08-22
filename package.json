@@ -7,6 +7,6 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "remoteflags-nodejs-client": "^1.0.6"
+    "remoteflags-nodejs-client": "^1.0.9"
   }
 }
